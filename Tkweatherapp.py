@@ -3,7 +3,7 @@ from tkinter import ttk
 import requests
 
 def  data_get():
-        API_key = 'd03103949490e67e0a6dbd73d818520e'
+        API_key = ''#Add your Open weather app api key here
         city = city_name.get()
         data = requests.get(
         f"https://api.openweathermap.org/data/2.5/weather?q={city}&units=imperial&APPID={API_key}").json()
